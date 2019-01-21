@@ -1,0 +1,22 @@
+<h1 class="sttittle">Sports Scraper</h1>
+
+<div class="button1">
+  <button type="button"  class="scrape">Scrape</button>
+</div>
+
+<ul> 
+  {{#each newsinfo}}
+  	<li>
+  	
+      <p><span class="label"> <strong>Title:</strong></span> {{title}}</p>
+      <p><span class="label"><strong>Summary:</strong></span> {{summary}}</p>
+        <p><a href="{{url}}">{{url}}</a> </p>
+
+     <button><a href=" /comments/{{this._id}}" id="view comments" data-id="{{this.id}}"  >View Comments</a> </button>
+      
+      
+      
+      <button><a href=" /{{this._id}}" id="comment"data-id="{{this._id}}"  >leave a comment</a></button>
+  	</li>
+  {{/each}}
+</ul>

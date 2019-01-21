@@ -1,0 +1,24 @@
+<h1 class="sttittle">Sports Scraper</h1>
+
+<div>
+<p id="commenttitle" class="title"><span ><strong>Title:</strong></span> {{title}}</p>
+</div>
+
+
+<ul> 
+  {{#each note}}
+  	<li>
+  	
+      <p><span class="label">Comment:</span> {{body}}</p>
+      
+       
+
+      <button data-id="{{this.id}}" class="deletecomment">Delete Comment</button>
+      
+      
+      
+      
+  	</li>
+  {{/each}}
+</ul>
+ <p class = "mainpage"><a href="/">main page </a> </p>
